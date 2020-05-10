@@ -212,6 +212,31 @@
   			transition: 0.5s;
   			animation: animate2 6s linear infinite;
   		}
+
+			audio:hover, audio:focus, audio:active{
+				-webkit-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+				-moz-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+				box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+				-webkit-transform: scale(1.05);
+				-moz-transform: scale(1.05);
+				transform: scale(1.05);
+}
+			audio{
+				position: fixed;
+        top: 780px;
+				left: 20px;
+        border: 1px solid #000;
+				-webkit-transition:all 0.5s linear;
+				-moz-transition:all 0.5s linear;
+				-o-transition:all 0.5s linear;
+				transition:all 0.5s linear;
+				-moz-box-shadow: 2px 2px 4px 0px #006773;
+				-webkit-box-shadow:  2px 2px 4px 0px #006773;
+				box-shadow: 2px 2px 4px 0px #006773;
+				-moz-border-radius:7px 7px 7px 7px ;
+				-webkit-border-radius:7px 7px 7px 7px ;
+				border-radius:7px 7px 7px 7px ;
+			}
   		.bulat span:nth-child(2){
   			position: absolute;
   			top: 0;
@@ -348,6 +373,7 @@
 		      <input type="radio" class="custom-control-input" id="customRadio9" name="example1">
 		      <label class="custom-control-label" for="customRadio9">RGB Gaming :v</label>
 		    </div>
+
 		    <input class="btn mt-3" id="color-picker" value='#0079FF' onclick="onClickWarna()" />
 		</div>
 		<div class="bg ubuntu"></div>
@@ -387,6 +413,7 @@
 			<div class="note"Bogeng</div>
 			<div class="pengembang">Andika Sujanadi</div>
 		</div>
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
@@ -1047,5 +1074,10 @@
 			}
 			typeWriter();
 		</script>
+
+		<audio controls autoplay>
+			<source src="saranghae.mp3" type="audio/mpeg" ></source>
+		</audio>
+
 	</body>
 </html>
