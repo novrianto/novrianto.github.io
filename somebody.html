@@ -433,7 +433,6 @@
 				<div class="myakun" id="nama">
 					<span id="spannama3" onclick="gantinama()"></span>
 				</div>
-				<div class="myakun" onclick="kembali()">Kembali</div>
 				<div class="myakun" onclick="reverse()">Reset</div>
 				<div class="contjam">
 					<div class="jam">-:-</div>
@@ -472,10 +471,10 @@
 				</div>
 				<div class="mybody">
 					<div class="mytitle">
-						Aku sejak lama suka padamu.
+						Aku sudah lama menyukaimu.
 					</div>
 					<div class="mycontent">
-						Maukah kau menjadi orang yang selalu ada disisiku, yang selalu ada disaat senang ataupun susah, yang selalu ada sampai akhir hayatku?
+						Maukah kau menjadi orang yang selalu ada disisiku, yang selalu ada disaat senang ataupun susah ? pilih jawaban dibawah yaaa
 					</div>
 					<div class="mybutton">
 						<div class="mybuttonno" onmouseover="move()" onclick="move2()" >tidak</div>
@@ -505,7 +504,7 @@
 	  		function init(){
 	  			startTime();
 	  			stopOpening();
-	  			add='<div class="cc">copyright Andika Sujanadi @2020</div>';
+	  			add='<div class="cc">copyright Dedi Novrianto @2020</div>';
 	  			$('body').append(add);
 	  			if(localStorage.getItem("nama") != null && localStorage.getItem("checked") == "yoi"){
 		  			namaku=localStorage.getItem("nama");
@@ -677,16 +676,7 @@
 				}
 				localStorage.clear();
 			}
-			function kembali(){
-				stopOpening();
-				localStorage.removeItem("checked");
-				if(blur=="false"){
-					wpblur();
-				}
-				$('#myform').hide();
-				$('#mywindow').fadeIn();
-				$('.myclock').hide();
-			}
+
 			function gantinama(){
 				nama=$('#spannama3').text();
 				$("#nama *").remove();
@@ -797,11 +787,7 @@
 					else if(h>4) document.querySelector('img').src="wp2.png";
 					else         document.querySelector('img').src="wp1.png";
 				}
-				if(window.btoa($('.cc').text())!='Y29weXJpZ2h0IEFuZGlrYSBTdWphbmFkaSBAMjAyMA=='){
-					if(jalan) $('.container').remove();
-					if(jalan) $('img').remove();
-					jalan=true;
-				}
+
 			}
 			function tulis(waktu,ucapan){
 				$("#spannama2").text('Selamat '+waktu+' '+localStorage.getItem("nama")+', '+ucapan+'.');
